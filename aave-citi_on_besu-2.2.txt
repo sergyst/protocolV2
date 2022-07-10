@@ -1,0 +1,307 @@
+> const mockHelpers = require('./helpers/oracles-helpers')
+undefined
+> await mockHelpers.deployMockAggregators({TEST: '12345678', AAAA: '12345678'}, false)
+*** MockAggregator ***
+
+Network: citi
+tx: 0x066197206ad5df9a9581bd26509b427c6527339d14ac59000fdce9d700f78a38
+contract address: 0xb8cdFb73C1C410cb395A414231958348F315D706
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 113810
+
+******
+
+*** MockAggregator ***
+
+Network: citi
+tx: 0x6b44cd10306ce663652238b78ef50c15af893761815ac10ceacc3c81db752753
+contract address: 0x86C3a2cE7E35c215eAF8D715506F4A4D96164Fcf
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 113810
+
+******
+
+{
+  TEST: Contract {
+    interface: Interface {
+      fragments: [Array],
+      _abiCoder: [AbiCoder],
+      functions: [Object],
+      errors: {},
+      events: [Object],
+      structs: {},
+      deploy: [ConstructorFragment],
+      _isInterface: true
+    },
+    provider: EthersProviderWrapper {
+      _isProvider: true,
+      _events: [],
+      _emitted: [Object],
+      disableCcipRead: false,
+      formatter: [Formatter],
+      anyNetwork: false,
+      _networkPromise: [Promise],
+      _maxInternalBlockNumber: 833,
+      _lastBlockNumber: 833,
+      _maxFilterBlockRange: 10,
+      _pollingInterval: 4000,
+      _fastQueryDate: 1655796221320,
+      connection: [Object],
+      _nextId: 42,
+      _hardhatProvider: BackwardsCompatibilityProviderAdapter {
+        _wrapped: ChainIdValidatorProvider {
+          _wrapped: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _wrappedProvider: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _expectedChainId: 1337,
+          _alreadyValidated: true,
+          _chainId: 1337
+        },
+        _provider: ChainIdValidatorProvider {
+          _wrapped: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _wrappedProvider: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _expectedChainId: 1337,
+          _alreadyValidated: true,
+          _chainId: 1337
+        },
+        sendAsync: [Function: bound sendAsync],
+        send: [Function: bound send],
+        _sendJsonRpcRequest: [Function: bound _sendJsonRpcRequest] AsyncFunction
+      },
+      _eventLoopCache: [Object],
+      _network: [Object],
+      _internalBlockNumber: [Promise],
+      _fastBlockNumber: 833,
+      _fastBlockNumberPromise: [Promise],
+      _poller: null,
+      _bootstrapPoll: null
+    },
+    signer: SignerWithAddress {
+      _isSigner: true,
+      address: '0x34862f8e6b077FA6C95B3CD291AC6405b623a019',
+      _signer: [JsonRpcSigner],
+      provider: [EthersProviderWrapper]
+    },
+    callStatic: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    estimateGas: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    functions: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    populateTransaction: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    filters: {
+      'AnswerUpdated(int256,uint256,uint256)': [Function (anonymous)],
+      AnswerUpdated: [Function (anonymous)]
+    },
+    _runningEvents: {},
+    _wrappedEmits: {},
+    address: '0xb8cdFb73C1C410cb395A414231958348F315D706',
+    resolvedAddress: Promise {
+      '0xb8cdFb73C1C410cb395A414231958348F315D706',
+      [Symbol(async_id_symbol)]: 5377,
+      [Symbol(trigger_async_id_symbol)]: 4746,
+      [Symbol(destroyed)]: [Object]
+    },
+    'getTokenType()': [Function (anonymous)],
+    'latestAnswer()': [Function (anonymous)],
+    getTokenType: [Function (anonymous)],
+    latestAnswer: [Function (anonymous)],
+    deployTransaction: {
+      hash: '0x066197206ad5df9a9581bd26509b427c6527339d14ac59000fdce9d700f78a38',
+      type: 0,
+      accessList: null,
+      blockHash: null,
+      blockNumber: null,
+      transactionIndex: null,
+      confirmations: 0,
+      from: '0x34862f8e6b077FA6C95B3CD291AC6405b623a019',
+      gasPrice: [BigNumber],
+      gasLimit: [BigNumber],
+      to: null,
+      value: [BigNumber],
+      nonce: 2,
+      data: '0x608060405234801561001057600080fd5b506040516101153803806101158339818101604052602081101561003357600080fd5b5051600081815560408051428152905183917f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f919081900360200190a35060968061007f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806350d25bcd146037578063fcab181914604f575b600080fd5b603d6055565b60408051918252519081900360200190f35b603d605b565b60005490565b60019056fea2646970667358221220dce7f2ea8276dc8bca688122c83c430452a48495cb0be9f3b658ae2c56e623be64736f6c634300060c00330000000000000000000000000000000000000000000000000000000000bc614e',
+      r: '0x01b01e0ae030e0c5d7d8f60f55a8cc7d74088c69ea41d3c79be0207dcbb05ce6',
+      s: '0x594645e51c41b7aa7ce6039ac6fc5480bb9d7489cfe4cac54ccebe30fd9d729d',
+      v: 2710,
+      creates: '0xb8cdFb73C1C410cb395A414231958348F315D706',
+      raw: '0xf9018902843b9aca008301bc928080b90135608060405234801561001057600080fd5b506040516101153803806101158339818101604052602081101561003357600080fd5b5051600081815560408051428152905183917f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f919081900360200190a35060968061007f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806350d25bcd146037578063fcab181914604f575b600080fd5b603d6055565b60408051918252519081900360200190f35b603d605b565b60005490565b60019056fea2646970667358221220dce7f2ea8276dc8bca688122c83c430452a48495cb0be9f3b658ae2c56e623be64736f6c634300060c00330000000000000000000000000000000000000000000000000000000000bc614e820a96a001b01e0ae030e0c5d7d8f60f55a8cc7d74088c69ea41d3c79be0207dcbb05ce6a0594645e51c41b7aa7ce6039ac6fc5480bb9d7489cfe4cac54ccebe30fd9d729d',
+      chainId: 1337,
+      wait: [Function (anonymous)]
+    }
+  },
+  AAAA: Contract {
+    interface: Interface {
+      fragments: [Array],
+      _abiCoder: [AbiCoder],
+      functions: [Object],
+      errors: {},
+      events: [Object],
+      structs: {},
+      deploy: [ConstructorFragment],
+      _isInterface: true
+    },
+    provider: EthersProviderWrapper {
+      _isProvider: true,
+      _events: [],
+      _emitted: [Object],
+      disableCcipRead: false,
+      formatter: [Formatter],
+      anyNetwork: false,
+      _networkPromise: [Promise],
+      _maxInternalBlockNumber: 833,
+      _lastBlockNumber: 833,
+      _maxFilterBlockRange: 10,
+      _pollingInterval: 4000,
+      _fastQueryDate: 1655796221320,
+      connection: [Object],
+      _nextId: 42,
+      _hardhatProvider: BackwardsCompatibilityProviderAdapter {
+        _wrapped: ChainIdValidatorProvider {
+          _wrapped: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _wrappedProvider: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _expectedChainId: 1337,
+          _alreadyValidated: true,
+          _chainId: 1337
+        },
+        _provider: ChainIdValidatorProvider {
+          _wrapped: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _wrappedProvider: FixedGasPriceProvider {
+            _wrapped: [AutomaticGasProvider],
+            _wrappedProvider: [AutomaticGasProvider],
+            _gasPrice: 1000000000
+          },
+          _expectedChainId: 1337,
+          _alreadyValidated: true,
+          _chainId: 1337
+        },
+        sendAsync: [Function: bound sendAsync],
+        send: [Function: bound send],
+        _sendJsonRpcRequest: [Function: bound _sendJsonRpcRequest] AsyncFunction
+      },
+      _eventLoopCache: [Object],
+      _network: [Object],
+      _internalBlockNumber: [Promise],
+      _fastBlockNumber: 833,
+      _fastBlockNumberPromise: [Promise],
+      _poller: null,
+      _bootstrapPoll: null
+    },
+    signer: SignerWithAddress {
+      _isSigner: true,
+      address: '0x34862f8e6b077FA6C95B3CD291AC6405b623a019',
+      _signer: [JsonRpcSigner],
+      provider: [EthersProviderWrapper]
+    },
+    callStatic: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    estimateGas: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    functions: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    populateTransaction: {
+      'getTokenType()': [Function (anonymous)],
+      'latestAnswer()': [Function (anonymous)],
+      getTokenType: [Function (anonymous)],
+      latestAnswer: [Function (anonymous)]
+    },
+    filters: {
+      'AnswerUpdated(int256,uint256,uint256)': [Function (anonymous)],
+      AnswerUpdated: [Function (anonymous)]
+    },
+    _runningEvents: {},
+    _wrappedEmits: {},
+    address: '0x86C3a2cE7E35c215eAF8D715506F4A4D96164Fcf',
+    resolvedAddress: Promise {
+      '0x86C3a2cE7E35c215eAF8D715506F4A4D96164Fcf',
+      [Symbol(async_id_symbol)]: 7100,
+      [Symbol(trigger_async_id_symbol)]: 6622,
+      [Symbol(destroyed)]: [Object]
+    },
+    'getTokenType()': [Function (anonymous)],
+    'latestAnswer()': [Function (anonymous)],
+    getTokenType: [Function (anonymous)],
+    latestAnswer: [Function (anonymous)],
+    deployTransaction: {
+      hash: '0x6b44cd10306ce663652238b78ef50c15af893761815ac10ceacc3c81db752753',
+      type: 0,
+      accessList: null,
+      blockHash: null,
+      blockNumber: null,
+      transactionIndex: null,
+      confirmations: 0,
+      from: '0x34862f8e6b077FA6C95B3CD291AC6405b623a019',
+      gasPrice: [BigNumber],
+      gasLimit: [BigNumber],
+      to: null,
+      value: [BigNumber],
+      nonce: 3,
+      data: '0x608060405234801561001057600080fd5b506040516101153803806101158339818101604052602081101561003357600080fd5b5051600081815560408051428152905183917f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f919081900360200190a35060968061007f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806350d25bcd146037578063fcab181914604f575b600080fd5b603d6055565b60408051918252519081900360200190f35b603d605b565b60005490565b60019056fea2646970667358221220dce7f2ea8276dc8bca688122c83c430452a48495cb0be9f3b658ae2c56e623be64736f6c634300060c00330000000000000000000000000000000000000000000000000000000000bc614e',
+      r: '0xcc4e81a69ae3a5f31db0b2ce5a27a2befbf69a38a5b227c34a7f4987f8cfd683',
+      s: '0x20df8dec3945341a35ce13d2b4dfb54050df8e8e05d7c1ad211157aa1ae68817',
+      v: 2709,
+      creates: '0x86C3a2cE7E35c215eAF8D715506F4A4D96164Fcf',
+      raw: '0xf9018903843b9aca008301bc928080b90135608060405234801561001057600080fd5b506040516101153803806101158339818101604052602081101561003357600080fd5b5051600081815560408051428152905183917f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f919081900360200190a35060968061007f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c806350d25bcd146037578063fcab181914604f575b600080fd5b603d6055565b60408051918252519081900360200190f35b603d605b565b60005490565b60019056fea2646970667358221220dce7f2ea8276dc8bca688122c83c430452a48495cb0be9f3b658ae2c56e623be64736f6c634300060c00330000000000000000000000000000000000000000000000000000000000bc614e820a95a0cc4e81a69ae3a5f31db0b2ce5a27a2befbf69a38a5b227c34a7f4987f8cfd683a020df8dec3945341a35ce13d2b4dfb54050df8e8e05d7c1ad211157aa1ae68817',
+      chainId: 1337,
+      wait: [Function (anonymous)]
+    }
+  }
+}

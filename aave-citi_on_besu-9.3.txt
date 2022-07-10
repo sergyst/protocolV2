@@ -1,0 +1,369 @@
+
+> @aave/protocol-v2@1.0.1 citi:privatenet:full:migration
+> npm run compile && npm run hardhat:citi -- citi:privatenet --skip-registry
+
+
+> @aave/protocol-v2@1.0.1 compile
+> SKIP_LOAD=true hardhat compile
+
+Nothing to compile
+Creating Typechain artifacts in directory types for target ethers-v5
+Successfully generated Typechain artifacts!
+
+> @aave/protocol-v2@1.0.1 hardhat:citi
+> hardhat --network citi "citi:privatenet" "--skip-registry"
+
+- Enviroment
+  - Network : citi
+Citi Migration started
+
+1. Deploy address provider
+*** LendingPoolAddressesProvider ***
+
+Network: citi
+tx: 0xfbc8e6befcbee3414cf73ea32306411183971ed4220e53e17abd77c1236231ff
+contract address: 0xb8cdFb73C1C410cb395A414231958348F315D706
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1606352
+
+******
+
+Pool Admin 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+Emergency Admin 0x4CBeD43421a782C90CF241F8981ebce5a760b761
+2. Deploy permissions manager
+
+- PermissionManager deployment
+	Deploying PermissionManager implementation ...
+Permission manager address 0x6e622f23815c4a3c50528b7eF54B87A627aeC319
+	Finished PermissionManager implementation deployment
+3. Deploy lending pool
+	Deploying new lending pool implementation & libraries...
+*** ReserveLogic ***
+
+Network: citi
+tx: 0xe85da32a013ccef4a4cb6ffa7ab081233b72213e687e3c0edec3c678e06fe269
+contract address: 0x838B0B624e493596eC4C18c98b52f19C1CAb46Ed
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 174668
+
+******
+
+*** GenericLogic ***
+
+Network: citi
+tx: 0xa73352b20965ae889fc371c6377aa15618d78a6e9c4c100af728a51c2aa4658f
+contract address: 0x2Deaba9107bf5bce28cb66F6106Dd544bc4CaE1f
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 851914
+
+******
+
+*** ValidationLogic ***
+
+Network: citi
+tx: 0x21167ecbe378ade53f04e787d5e1a860cac7b1c22e0e4c5754cb5f1e6fd8fb92
+contract address: 0x9c1b27144459eD98888350b728729dFf57Db0ee5
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1830762
+
+******
+
+*** LendingPool ***
+
+Network: citi
+tx: 0xf93982cb4a92fa35cf8ad18538fc47ac00830ddf170f8678d0b5899c6aa6c267
+contract address: 0x96E8Ba34A323aCf0bCDD3E0a91523c3CbBCbF7d2
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 5355480
+
+******
+
+	Setting lending pool implementation with address: 0x96E8Ba34A323aCf0bCDD3E0a91523c3CbBCbF7d2
+	Deploying new configurator implementation...
+*** LendingPoolConfigurator ***
+
+Network: citi
+tx: 0xe4380018d215976049ee3c91ff42f90f989d0c36cd568b54875cc0250574b381
+contract address: 0xfaD6d00bDcB79294a9aB43383B115a9D7cB7BfC6
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 3510829
+
+******
+
+	Setting lending pool configurator implementation with address: 0xfaD6d00bDcB79294a9aB43383B115a9D7cB7BfC6
+*** StableAndVariableTokensHelper ***
+
+Network: citi
+tx: 0xf27e4854d365c037554f8f149dbb080d832af4074e480435e953a1b42c66e125
+contract address: 0x4a2a7627D198E7381fFA1105B6c477b58bdeBb9C
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 3684006
+
+******
+
+*** ATokensAndRatesHelper ***
+
+Network: citi
+tx: 0xf6848978f370b09b5ffaa3d37e131a40556db7e970f12d83d8dfedc57b8c53d3
+contract address: 0x572b5090620f13404A6f2e13B0237e4201D822F7
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 3779404
+
+******
+
+Deploying implementation AToken
+*** AToken ***
+
+Network: citi
+tx: 0x4fba956f2a1db939405c4ffb6c1129d823a0bbcf8bfb020998faf76890af9a9e
+contract address: 0xEA56E50E035868a907A6A965c52f2166aba97dd6
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 2313059
+
+******
+
+*** StableDebtToken ***
+
+Network: citi
+tx: 0x479549daa1080cdb5c14117465e09263860ff41f3c721f9724f800be166b4ece
+contract address: 0x7CD8F70a23E786FCa84a1B445B90C56822eB35f3
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1702997
+
+******
+
+*** VariableDebtToken ***
+
+Network: citi
+tx: 0x27b686e42d8ed36aa98f7baf82bf25fe4b1fda26e55125e40fccdd357c815aae
+contract address: 0xEFE03B9301B2a2EEdF86615d9307845e5a5F5AEA
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1421377
+
+******
+
+4. Deploy oracles
+===== allAssetsAddresses: {"TEST":"0xC702932fC75645322c682Bd6B4d58c538cAdCd7b","USD":"0x10F7Fc1F91Ba351f9C629c5947AD69bD03C05b96"}
+===== aggregatorsAddresses: {"TEST":"0xD6403A73FD3a33Bac8763F9F971FDA56e637F109","USD":"0xD6403A73FD3a33Bac8763F9F971FDA56e637F109"}
+===== oracleQuoteCurrency: ETH
+===== quoteCurrencies: ETH,WETH
+===== assetsWithoutQuoteCurrency: {"TEST":"0xC702932fC75645322c682Bd6B4d58c538cAdCd7b","USD":"0x10F7Fc1F91Ba351f9C629c5947AD69bD03C05b96"}
+===== assetsWithoutQuoteCurrency entries: TEST,0xC702932fC75645322c682Bd6B4d58c538cAdCd7b,USD,0x10F7Fc1F91Ba351f9C629c5947AD69bD03C05b96
+=============== ENTRY
+===== tokenSymbol: TEST, tokenAddress: 0xC702932fC75645322c682Bd6B4d58c538cAdCd7b
+===== aggregatorAddressIndex: 0
+===== aggregatorsAddresses entries: TEST,0xD6403A73FD3a33Bac8763F9F971FDA56e637F109,USD,0xD6403A73FD3a33Bac8763F9F971FDA56e637F109
+=============== RETURN tokenAddress: 0xC702932fC75645322c682Bd6B4d58c538cAdCd7b, aggregatorAddress: 0xD6403A73FD3a33Bac8763F9F971FDA56e637F109
+=============== ENTRY
+===== tokenSymbol: USD, tokenAddress: 0x10F7Fc1F91Ba351f9C629c5947AD69bD03C05b96
+===== aggregatorAddressIndex: 1
+===== aggregatorsAddresses entries: TEST,0xD6403A73FD3a33Bac8763F9F971FDA56e637F109,USD,0xD6403A73FD3a33Bac8763F9F971FDA56e637F109
+=============== RETURN tokenAddress: 0x10F7Fc1F91Ba351f9C629c5947AD69bD03C05b96, aggregatorAddress: 0xD6403A73FD3a33Bac8763F9F971FDA56e637F109
+*** WETHMocked ***
+
+Network: citi
+tx: 0x1092e5de9095d86033aa2db4ada045c9eefa5bcd8c53120f06c984a86d86994e
+contract address: 0xA78Be5EAA85E99c4fB2EF867f21dcF1f342c7e2a
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 540938
+
+******
+
+*** AaveOracle ***
+
+Network: citi
+tx: 0xe8418b05b5c9b1ef8cec4f2beebab85e4722dc7e12a113e218ba0eca279e9a94
+contract address: 0xeCc0572a9ef9b2b8695586eeA6DAd98217D54DB1
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 762855
+
+******
+
+*** LendingRateOracle ***
+
+Network: citi
+tx: 0x83393bcfd6d86e512c00e61b970da1c133fa2fb52288879680d31e4924f7d84e
+contract address: 0x36489e55935CdCB39978b75FfBC546d964f3dD95
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 343990
+
+******
+
+- Oracle borrow initalization in 1 txs
+  - Setted Oracle Borrow Rates for: TEST
+Aave Oracle: 0xeCc0572a9ef9b2b8695586eeA6DAd98217D54DB1
+Lending Rate Oracle: 0x36489e55935CdCB39978b75FfBC546d964f3dD95
+5. Deploy Data Provider
+*** AaveProtocolDataProvider ***
+
+Network: citi
+tx: 0x4515a1d6a172125b0ff14804c98fdae595a4fe651a47606e9b63abcc4fc10593
+contract address: 0xfBE7d1Ff5Bd7fAbEE2E84299795a65A6F2d9B918
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1549295
+
+******
+
+6. Deploy Permissions
+*** WETHMocked ***
+
+Network: citi
+tx: 0xc444433678286d7b739ffa25eb70f63b0f9ed5356d128fbf03488580ba2b2c79
+contract address: 0xa1850aD54FcaEf28D25F154bDB075B78ae2F45DE
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 540938
+
+******
+
+deployerAddress: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+	Finished WETHGateway deployment
+7. Initialize lending pool
+*** PermissionedStableDebtToken ***
+
+Network: citi
+tx: 0xec58e1e7c21bb13ad5e77b93467a67eab5ba633230bb63a6133db76170f2c019
+contract address: 0x39e01ecb70AF7F3c8BEE0d27994d5587e882c131
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1825774
+
+******
+
+*** PermissionedVariableDebtToken ***
+
+Network: citi
+tx: 0x4c81384e29c1f665453958e6a879c66bc56a8b8d3ed6a46886309106f704b061
+contract address: 0x757Ddee7b4B289D5cdc41658c0dAbAfFe42Ea6ee
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 1543167
+
+******
+
+*** AToken ***
+
+Network: citi
+tx: 0x41b19b905d8b68f38104c76aef70dd81e93bef55902f95a3c665c0cc99dcc8e5
+contract address: 0x0734bcDaF6d3be5b7cd5A76dEa38968896177fE3
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 2313059
+
+******
+
+*** DefaultReserveInterestRateStrategy ***
+
+Network: citi
+tx: 0x6987178ada4d9946d795803f1e2ead3ee340dcdac6c98d65f27f134ceb86bb00
+contract address: 0x8c7A37Aa441Ae30024CCfDc0c0e5b0C62B5698E4
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 789553
+
+******
+
+===== initInputParams: [{"aTokenImpl":"0x0734bcDaF6d3be5b7cd5A76dEa38968896177fE3","stableDebtTokenImpl":"0x39e01ecb70AF7F3c8BEE0d27994d5587e882c131","variableDebtTokenImpl":"0x757Ddee7b4B289D5cdc41658c0dAbAfFe42Ea6ee","underlyingAssetDecimals":"18","interestRateStrategyAddress":"0x8c7A37Aa441Ae30024CCfDc0c0e5b0C62B5698E4","underlyingAsset":"0xC702932fC75645322c682Bd6B4d58c538cAdCd7b","treasury":"0xaa0233b633ef4A9eC1E03D3788449d2a249eFDf6","incentivesController":"0x0000000000000000000000000000000000000000","underlyingAssetName":"TEST","aTokenName":"Citi market TEST","aTokenSymbol":"aTEST","variableDebtTokenName":"Citi variable debt  TEST","variableDebtTokenSymbol":"variableDebtTEST","stableDebtTokenName":"Citi stable debt  TEST","stableDebtTokenSymbol":"stableDebtTEST","params":"0x10"}]
+===== reserveSymbols: ["TEST"]
+================================================ >>>
+- configurator.batchInitReserve with chunkedInitInputParams: [[{"aTokenImpl":"0x0734bcDaF6d3be5b7cd5A76dEa38968896177fE3","stableDebtTokenImpl":"0x39e01ecb70AF7F3c8BEE0d27994d5587e882c131","variableDebtTokenImpl":"0x757Ddee7b4B289D5cdc41658c0dAbAfFe42Ea6ee","underlyingAssetDecimals":"18","interestRateStrategyAddress":"0x8c7A37Aa441Ae30024CCfDc0c0e5b0C62B5698E4","underlyingAsset":"0xC702932fC75645322c682Bd6B4d58c538cAdCd7b","treasury":"0xaa0233b633ef4A9eC1E03D3788449d2a249eFDf6","incentivesController":"0x0000000000000000000000000000000000000000","underlyingAssetName":"TEST","aTokenName":"Citi market TEST","aTokenSymbol":"aTEST","variableDebtTokenName":"Citi variable debt  TEST","variableDebtTokenSymbol":"variableDebtTEST","stableDebtTokenName":"Citi stable debt  TEST","stableDebtTokenSymbol":"stableDebtTEST","params":"0x10"}]]
+- Reserves initialization in 1 txs
+=== configurator.address 0x917CB7567a9cFF32a9E1856591B3D34C9CAF61c9
+=== configurator.signer "<SignerWithAddress 0x34862f8e6b077FA6C95B3CD291AC6405b623a019>"
+=== configurator json {"interface":{"fragments":[{"name":"ATokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"BorrowingDisabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"BorrowingEnabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableRateEnabled","type":"bool","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"type":"event","_isFragment":true},{"name":"CollateralConfigurationChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"ltv","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationThreshold","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationBonus","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},{"name":"Log","anonymous":false,"inputs":[{"name":"message","type":"string","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveActivated","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveDeactivated","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveDecimalsChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"decimals","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveFactorChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"factor","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveFrozen","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveInitialized","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"aToken","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtToken","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtToken","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveInterestRateStrategyChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"strategy","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"ReserveUnfrozen","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"StableDebtTokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"StableRateDisabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"StableRateEnabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"name":"VariableDebtTokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},{"type":"function","name":"activateReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"batchInitReserve","constant":false,"inputs":[{"name":"input","type":"tuple[]","indexed":null,"components":[{"name":"aTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetDecimals","type":"uint8","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint8","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAsset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":-1,"arrayChildren":{"name":null,"type":"tuple","indexed":null,"components":[{"name":"aTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetDecimals","type":"uint8","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint8","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAsset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true},"baseType":"array","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"configureReserveAsCollateral","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"ltv","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationThreshold","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationBonus","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"deactivateReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"disableBorrowingOnReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"disableReserveStableRate","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"enableBorrowingOnReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableBorrowRateEnabled","type":"bool","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"enableReserveStableRate","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"freezeReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"initialize","constant":false,"inputs":[{"name":"provider","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"setPoolPause","constant":false,"inputs":[{"name":"val","type":"bool","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"setReserveFactor","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"reserveFactor","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"setReserveInterestRateStrategyAddress","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"rateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"unfreezeReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"updateAToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"updateStableDebtToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},{"type":"function","name":"updateVariableDebtToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true}],"_abiCoder":{"coerceFunc":null},"functions":{"activateReserve(address)":{"type":"function","name":"activateReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"batchInitReserve((address,address,address,uint8,address,address,address,address,string,string,string,string,string,string,string,bytes)[])":{"type":"function","name":"batchInitReserve","constant":false,"inputs":[{"name":"input","type":"tuple[]","indexed":null,"components":[{"name":"aTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetDecimals","type":"uint8","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint8","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAsset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":-1,"arrayChildren":{"name":null,"type":"tuple","indexed":null,"components":[{"name":"aTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtTokenImpl","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetDecimals","type":"uint8","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint8","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAsset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"underlyingAssetName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"aTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"variableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenName","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"stableDebtTokenSymbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true},"baseType":"array","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"configureReserveAsCollateral(address,uint256,uint256,uint256)":{"type":"function","name":"configureReserveAsCollateral","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"ltv","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationThreshold","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationBonus","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"deactivateReserve(address)":{"type":"function","name":"deactivateReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"disableBorrowingOnReserve(address)":{"type":"function","name":"disableBorrowingOnReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"disableReserveStableRate(address)":{"type":"function","name":"disableReserveStableRate","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"enableBorrowingOnReserve(address,bool)":{"type":"function","name":"enableBorrowingOnReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableBorrowRateEnabled","type":"bool","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"enableReserveStableRate(address)":{"type":"function","name":"enableReserveStableRate","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"freezeReserve(address)":{"type":"function","name":"freezeReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"initialize(address)":{"type":"function","name":"initialize","constant":false,"inputs":[{"name":"provider","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"setPoolPause(bool)":{"type":"function","name":"setPoolPause","constant":false,"inputs":[{"name":"val","type":"bool","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"setReserveFactor(address,uint256)":{"type":"function","name":"setReserveFactor","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"reserveFactor","type":"uint256","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"setReserveInterestRateStrategyAddress(address,address)":{"type":"function","name":"setReserveInterestRateStrategyAddress","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"rateStrategyAddress","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"unfreezeReserve(address)":{"type":"function","name":"unfreezeReserve","constant":false,"inputs":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"updateAToken((address,address,address,string,string,address,bytes))":{"type":"function","name":"updateAToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"treasury","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"updateStableDebtToken((address,address,string,string,address,bytes))":{"type":"function","name":"updateStableDebtToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"updateVariableDebtToken((address,address,string,string,address,bytes))":{"type":"function","name":"updateVariableDebtToken","constant":false,"inputs":[{"name":"input","type":"tuple","indexed":null,"components":[{"name":"asset","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"incentivesController","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"name","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"symbol","type":"string","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true},{"name":"implementation","type":"address","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"params","type":"bytes","indexed":null,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bytes","_isParamType":true}],"arrayLength":null,"arrayChildren":null,"baseType":"tuple","_isParamType":true}],"outputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true}},"errors":{},"events":{"ATokenUpgraded(address,address,address)":{"name":"ATokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"BorrowingDisabledOnReserve(address)":{"name":"BorrowingDisabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"BorrowingEnabledOnReserve(address,bool)":{"name":"BorrowingEnabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableRateEnabled","type":"bool","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"bool","_isParamType":true}],"type":"event","_isFragment":true},"CollateralConfigurationChanged(address,uint256,uint256,uint256)":{"name":"CollateralConfigurationChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"ltv","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationThreshold","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true},{"name":"liquidationBonus","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},"Log(string)":{"name":"Log","anonymous":false,"inputs":[{"name":"message","type":"string","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"string","_isParamType":true}],"type":"event","_isFragment":true},"ReserveActivated(address)":{"name":"ReserveActivated","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"ReserveDeactivated(address)":{"name":"ReserveDeactivated","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"ReserveDecimalsChanged(address,uint256)":{"name":"ReserveDecimalsChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"decimals","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},"ReserveFactorChanged(address,uint256)":{"name":"ReserveFactorChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"factor","type":"uint256","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"uint256","_isParamType":true}],"type":"event","_isFragment":true},"ReserveFrozen(address)":{"name":"ReserveFrozen","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"ReserveInitialized(address,address,address,address,address)":{"name":"ReserveInitialized","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"aToken","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"stableDebtToken","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"variableDebtToken","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"interestRateStrategyAddress","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"ReserveInterestRateStrategyChanged(address,address)":{"name":"ReserveInterestRateStrategyChanged","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"strategy","type":"address","indexed":false,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"ReserveUnfrozen(address)":{"name":"ReserveUnfrozen","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"StableDebtTokenUpgraded(address,address,address)":{"name":"StableDebtTokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"StableRateDisabledOnReserve(address)":{"name":"StableRateDisabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"StableRateEnabledOnReserve(address)":{"name":"StableRateEnabledOnReserve","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true},"VariableDebtTokenUpgraded(address,address,address)":{"name":"VariableDebtTokenUpgraded","anonymous":false,"inputs":[{"name":"asset","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"proxy","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true},{"name":"implementation","type":"address","indexed":true,"components":null,"arrayLength":null,"arrayChildren":null,"baseType":"address","_isParamType":true}],"type":"event","_isFragment":true}},"structs":{},"deploy":{"name":null,"type":"constructor","inputs":[],"payable":false,"stateMutability":"nonpayable","gas":null,"_isFragment":true},"_isInterface":true},"provider":"<WrappedHardhatProvider>","signer":"<SignerWithAddress 0x34862f8e6b077FA6C95B3CD291AC6405b623a019>","callStatic":{},"estimateGas":{},"functions":{},"populateTransaction":{},"filters":{},"_runningEvents":{},"_wrappedEmits":{},"address":"0x917CB7567a9cFF32a9E1856591B3D34C9CAF61c9","resolvedAddress":{}}
+=== await configurator.batchInitReserve. chunkedInitInputParam: 0
+=== waitForTx configurator.batchInitReserve. chunkedInitInputParam: 0
+  - Reserve ready for: TEST
+    * gasUsed 1994625
+================================================ <<<
+- Configure reserves in 1 txs
+  - Init for: TEST
+*** LendingPoolCollateralManager ***
+
+Network: citi
+tx: 0xf4229ecc7f5ea2f4f1b55981dbc5777b039d47aa81646d33224c73cf3f94ca2f
+contract address: 0xff13e933f5EE7833ffD8608F6ba2c64cD383494d
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 2522671
+
+******
+
+	Setting lending pool collateral manager implementation with address 0xff13e933f5EE7833ffD8608F6ba2c64cD383494d
+	Setting AaveProtocolDataProvider at AddressesProvider at id: 0x01 0xff13e933f5EE7833ffD8608F6ba2c64cD383494d
+*** WalletBalanceProvider ***
+
+Network: citi
+tx: 0xc40eac9c6c582213d459af5cf1a8e395093bae46f39ad84d97ceba23421b2e5c
+contract address: 0xEB0Bb17C4e3B9e6a49AfD28750C184617942e35B
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 622502
+
+******
+
+*** UiPoolDataProvider ***
+
+Network: citi
+tx: 0x7637dc64baf00c6706248e44b9f3ff3d17e8b948fa51304608bda49f18069c6d
+contract address: 0x8B9963bfB85a2ba6F0153dE4b28105e06C13FdA6
+deployer address: 0x34862f8e6b077FA6C95B3CD291AC6405b623a019
+gas price: 1000000000
+gas used: 3063379
+
+******
+
+UiPoolDataProvider deployed at: 0x8B9963bfB85a2ba6F0153dE4b28105e06C13FdA6
+GATEWAY 0x5D7E65138BB4dF3231DDe8cfd3E9464ba4fb2Be8
+
+Finished migrations
+Contracts deployed at citi
+---------------------------------
+N# Contracts: 31
+LendingPoolAddressesProvider: 0xb8cdFb73C1C410cb395A414231958348F315D706
+ReserveLogic: 0x838B0B624e493596eC4C18c98b52f19C1CAb46Ed
+GenericLogic: 0x2Deaba9107bf5bce28cb66F6106Dd544bc4CaE1f
+ValidationLogic: 0x9c1b27144459eD98888350b728729dFf57Db0ee5
+LendingPoolImpl: 0x96E8Ba34A323aCf0bCDD3E0a91523c3CbBCbF7d2
+LendingPool: 0x0486F0f2c43e0830BA3CDE221B3F9965f91B7d50
+LendingPoolConfiguratorImpl: 0xfaD6d00bDcB79294a9aB43383B115a9D7cB7BfC6
+LendingPoolConfigurator: 0x917CB7567a9cFF32a9E1856591B3D34C9CAF61c9
+StableAndVariableTokensHelper: 0x4a2a7627D198E7381fFA1105B6c477b58bdeBb9C
+ATokensAndRatesHelper: 0x572b5090620f13404A6f2e13B0237e4201D822F7
+AToken: 0x0734bcDaF6d3be5b7cd5A76dEa38968896177fE3
+StableDebtToken: 0x7CD8F70a23E786FCa84a1B445B90C56822eB35f3
+VariableDebtToken: 0xEFE03B9301B2a2EEdF86615d9307845e5a5F5AEA
+WETHMocked: 0xa1850aD54FcaEf28D25F154bDB075B78ae2F45DE
+AaveOracle: 0xeCc0572a9ef9b2b8695586eeA6DAd98217D54DB1
+LendingRateOracle: 0x36489e55935CdCB39978b75FfBC546d964f3dD95
+AaveProtocolDataProvider: 0xfBE7d1Ff5Bd7fAbEE2E84299795a65A6F2d9B918
+WETHGateway: 0x5D7E65138BB4dF3231DDe8cfd3E9464ba4fb2Be8
+PermissionedStableDebtToken: 0x39e01ecb70AF7F3c8BEE0d27994d5587e882c131
+PermissionedVariableDebtToken: 0x757Ddee7b4B289D5cdc41658c0dAbAfFe42Ea6ee
+aTokenImpl: 0x0734bcDaF6d3be5b7cd5A76dEa38968896177fE3
+DefaultReserveInterestRateStrategy: 0x8c7A37Aa441Ae30024CCfDc0c0e5b0C62B5698E4
+rateStrategyTEST: 0x8c7A37Aa441Ae30024CCfDc0c0e5b0C62B5698E4
+MintableERC20: 0xC702932fC75645322c682Bd6B4d58c538cAdCd7b
+MockAggregator: 0xD6403A73FD3a33Bac8763F9F971FDA56e637F109
+LendingPoolCollateralManagerImpl: 0xff13e933f5EE7833ffD8608F6ba2c64cD383494d
+LendingPoolCollateralManager: 0xff13e933f5EE7833ffD8608F6ba2c64cD383494d
+WalletBalanceProvider: 0xEB0Bb17C4e3B9e6a49AfD28750C184617942e35B
+UiPoolDataProvider: 0x8B9963bfB85a2ba6F0153dE4b28105e06C13FdA6
+PermissionManager: 0x6e622f23815c4a3c50528b7eF54B87A627aeC319
+rateStrategyAAAA: 0x17D75e30C25611FfA3Fa2D1e07B386CEbC54aD46 
+
